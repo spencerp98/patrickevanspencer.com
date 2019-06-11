@@ -10,13 +10,9 @@ const app = express();
 
 //set up modules
 const bodyParser = require("body-parser");
-const enforce = require('express-sslify');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-if (hostname !== '127.0.0.1') {
-    app.use(enforce.HTTPS({ trustProtoHeader: true }));
-}
 
 //set up database connection
 const mysql = require("./dbcon.js");
