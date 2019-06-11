@@ -1,0 +1,36 @@
+<table border="solid">
+	<thead>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Manufacturer</th>
+			<th>Model</th>
+		</tr>
+	</thead>
+	<tbody>
+	    {{#each crew_search}}
+		<tr>
+			<td>{{fname}}</td>
+			<td>{{lname}}</td>
+			<td>{{manufacturer}}</td>
+			<td>{{model}}</td>
+		</tr>	
+		{{/each}}
+	</tbody>
+</table>
+
+<br>
+<form id="addCert" action="/db-project/crew/crewsearch/{{crew_member.id}}" method="post">
+	<fieldset>
+		<legend>Add a new aircraft certification to this Crew Member</legend>
+		<input type="hidden" value="{{crew_member.id}}" name="crew_id">
+		<p>Aircraft Types:
+			<select name="aircraftTypeID">
+				{{#each aircraftType}}
+				<option value="{{id}}">{{manufacturer}} {{model}}</option>
+				{{/each}}
+			</select>
+		</p>
+		<input type="submit" value="Submit" name="newCertSubmit">
+	</fieldset>
+</form>

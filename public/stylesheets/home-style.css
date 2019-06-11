@@ -1,0 +1,35 @@
+body {
+    background-image: url(/images/philly2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.home-container {
+    width:50%;
+    min-width:300px;
+    max-width:100%;
+    opacity: 0.95;
+    margin:auto;
+    margin-top: 75px;
+}
+
+.home-jumbo {
+    background-color: #111111;
+}
+
+.home-header {
+    color: white;
+    text-align:center;
+}
+
+.home-bio {
+    color: white;
+    font-size:22px;
+    font-weight: 500;
+    opacity: 1;
+    text-align: center;
+}
+
+.home-link {
+    justify-content:center;
+}

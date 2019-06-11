@@ -1,0 +1,32 @@
+body {
+    background: white;
+}
+
+.resume-header {
+    background-image:  url(/images/philly1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 700px;
+}
+
+.resume-page-jumbo {
+    background-color:#212529;
+}
+
+.resume-page-title {
+    color: #ffffff;
+}
+
+.scroll-down {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.location {
+    font-style:italic;
+}
+
+.resume-spacer {
+    height: 50px;
+}

@@ -1,0 +1,21 @@
+<form id="addCrewFlight" action="/db-project/flights/assignflight" method="post">
+	<fieldset>
+		<legend>Assign a crew member to a flight</legend>
+		
+		<label for="crew_id">Crew Member:</label>
+		<select name="crew_id">
+			{{#each crew_members}}
+			<option value="{{id}}">{{fname}} {{lname}}</option>
+			{{/each}}
+		</select>
+		<br>
+		<label for="flight_id">Flight:</label>
+		<select name="flight_id">
+			{{#each flights}}
+			<option value="{{id}}">{{flightNum}}</option>
+			{{/each}}
+		</select>
+		
+		<input type="submit" value="Submit" name="crewFlightSubmit">
+	</fieldset>
+</form>

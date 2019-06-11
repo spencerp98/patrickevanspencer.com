@@ -1,0 +1,40 @@
+body {
+    background:#202020;
+}
+
+.projects-header {
+    text-align: center;
+}
+
+.thumbnail {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.caption-capstone {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.rps-text-box {
+    margin-top:30px;
+}
+
+.rps-text {
+    text-align:center;
+}

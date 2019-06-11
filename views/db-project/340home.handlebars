@@ -1,0 +1,29 @@
+<div>
+	<br>
+	<a href="/db-project/crew">View Crew Member information</a>
+	<br>
+	<a href="/db-project/aircraft">View Aircraft information</a>
+	<br>
+	<a href="/db-project/flights">View Flight information</a>
+	<br>
+	<h3 class="mt-4">Introduction</h3>
+	<p>This application was the final project in my databases course at Oregon State University. A classmate and I 
+	designed the database to represent data from an airline operation. We discussed what entities and relationships
+	we would want to represent and drew out an ER diagram before writing ddl files to create the database. The database
+	was hosted on a mySQL server on the school's network. We then created this web interface using node and express
+	to preform CRUD operations on the data.</p>
+	<h3>Description</h3>
+	<span>There are seven tables in the database:</span>
+	<ul>
+		<li>crew_member - Entity has attributes for the name, position and crewbase id of flight crew.</li>
+		<li>crew_base -  Entity with the airport identifier for an airport where crew members are based.</li>
+		<li>flight - Entity that contains the flight number, aircraft id, departure and arrival airports and date and time of a flight</li>
+		<li>aircraft - Entity that has the attibutes aircraft type id and registration number</li>
+		<li>aircraft_type - Entity with manufacturer and model attributes</li>
+		<li>crew_aircraft - Relationship that represents whether a crew member is certified to fly a type of aircraft.</li>
+		<li>crew_flight - Relationship that shows which flights are assigned to which crew members.</li>
+	</ul>
+	<h3>ER Diagram</h3>
+	<br>
+	<img class="w-75" src="/images/erd.jpg">
+</div>

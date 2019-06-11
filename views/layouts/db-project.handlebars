@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline Database</title>
+	
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	
+  	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:300" rel="stylesheet">
+	
+	<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/dbstyle.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+    <script src="/{{this}}"></script>
+    {{/each}}
+</head>
+
+<body>
+
+<div class="fixed-top bg-dark">
+	<div class="container" id="navb">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">Patrick Spencer</a>
+		  	<span class="n-links">
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+		  		<div class="collapse navbar-collapse" id="navbarNav">
+			   		<ul class="navbar-nav nav">
+			      		<li class="nav-item">
+			        		<a class="nav-link" href="/aboutMe">About Me</a>
+			      		</li>
+			   			<li class="nav-item">
+			        		<a class="nav-link" href="/projects">Projects</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" href="/Resume">Resume</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" href="/contact">Contact</a>
+			      		</li>
+			    	</ul>
+			  	</div>
+		  	</span>
+		</nav>
+	</div>	
+</div>
+
+<div class="container">
+	
+	<div class="my-3 pt-5">
+		<h1>Airline Database</h1>
+		<br>
+		<a href="/db-project">Database Description page</a>
+	</div>
+	
+	<div class="fix-height">
+		{{{body}}}
+	</div>
+</div>
+
+<div class="footer mt-5 d-flex justify-content-center">
+	<div class="social-icons-container align-self-end justify-content-center">
+		<ul class="nav nav-fill">
+			<li class="nav-item">
+		    	<a class="social-icons nav-link fa fa-linkedin" href="https://www.linkedin.com/in/patrickspen/" target="_blank"></a>
+		  	</li>
+		  	<li class="nav-item">
+		  		<a class="social-icons nav-link fa fa-github" href="https://github.com/spencerp98" target="_blank"></a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="social-icons nav-link fa fa-stack-overflow" href="https://stackoverflow.com/users/8798402/patrick-spencer?tab=profile" target="_blank"></a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="social-icons nav-link fa fa-facebook" href="https://www.facebook.com/patrick.spencer" target="_blank"></a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="social-icons nav-link fa fa-twitter" href="https://twitter.com/pspencer98" target="_blank"></a>
+		  	</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

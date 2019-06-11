@@ -1,0 +1,16 @@
+body {
+    background-image: url('/images/philly3.jpg');
+}
+
+.contact-info {
+    height:550px;
+}
+
+.contact-info-text {
+    background:#212529;
+    color:white;
+}
+
+.contact-spacer {
+    height:100px;
+}

@@ -1,0 +1,34 @@
+html {
+    height:100%;
+}
+
+body {
+    background-image: url(/images/philly1.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    font-family:'Roboto', sans-serif;
+    font-weight:300;
+}
+
+.fix-height{
+    min-height: calc(100vh - 100px);
+}
+
+.footer{
+    background: #090909;
+    height: 100px;
+}
+
+.social-icons {
+    color:white;
+    font-size:25px;
+}
+
+.body-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+}
+
+.spacer {
+    height:50px;
+}

@@ -1,0 +1,50 @@
+body {
+    background: white;
+}
+
+.about-me-head-box {
+    background-image:  url(/images/about-me-background-1.jpg);
+    background-size:cover;
+    background-position: top;
+    height: 700px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-header {
+    margin-top:150px;
+    margin-bottom:50px;
+    font-size: 50px;
+}
+
+.about-me-box {
+    padding: 50px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.about-me-osu {
+    background-color: #e0e0e0;
+    text-align: center;    
+}
+
+.osu-logo {
+    width:250px;
+}
+
+.about-me-pilot {
+    background-color: #fafafa;
+}
+
+.about-video {
+    text-align: center;
+}
+
+.about-me-pictures {
+    background: #555555;
+}
+
+.about-me-funfacts {
+    text-align: center;
+}
