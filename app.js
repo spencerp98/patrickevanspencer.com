@@ -1,20 +1,35 @@
-const https = require('https');
-const fs = require('fs');
-var express = require("express");
-var app = express();
-var handlebars = require('express-handlebars').create({defaultLayout:'main'});
-var bodyParser = require('body-parser');
+let port = process.env.PORT || 8000;
+let hostname = process.env.IP;
+if(port === 8000) {
+    hostname = '127.0.0.1';
+}
 
-var mysql = require('./dbcon.js');
-app.set('mysql', mysql);
+//set up express app
+const express = require("express");
+const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+//set up modules
+const bodyParser = require("body-parser");
+const enforce = require('express-sslify');
+
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+if (hostname !== '127.0.0.1') {
+    app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
-app.engine('handlebars', handlebars.engine);
-app.set('view engine', 'handlebars');
+//set up database connection
+const mysql = require("./dbcon.js");
+app.set("mysql", mysql);
 
-app.use(express.static(__dirname + '/public'));
+//set up template engine
+const handlebars = require("express-handlebars").create({defaultLayout:"main"});
+app.engine("handlebars", handlebars.engine);
+app.set("view engine", "handlebars");
+
+app.use(express.static(__dirname + "/public"));
+
+// URLs
 
 app.get("/", function(req, res){
     res.render('home');
@@ -51,6 +66,6 @@ app.use(function(err, req, res, next){
   res.render('500');
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log('Express started; press Ctrl-C to terminate.');
+app.listen(port, hostname, function(){
+    console.log(`Server running at http://${hostname}:${port}/ ; press Ctrl-C to terminate.`);
 });
