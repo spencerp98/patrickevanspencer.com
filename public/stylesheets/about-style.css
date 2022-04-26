@@ -13,15 +13,20 @@ body {
 }
 
 .about-header {
-    margin-top:150px;
+    margin-top:200px;
     margin-bottom:50px;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .about-me-box {
     padding: 50px;
     font-size: 17px;
     font-weight: 600;
+}
+
+.about-me-expedient {
+    background-color: #ffffff;
+    text-align: center;    
 }
 
 .about-me-osu {

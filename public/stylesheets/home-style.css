@@ -8,13 +8,12 @@ body {
     width:50%;
     min-width:300px;
     max-width:100%;
-    opacity: 0.95;
     margin:auto;
     margin-top: 75px;
 }
 
 .home-jumbo {
-    background-color: #111111;
+    background-color: #151515;
 }
 
 .home-header {
@@ -26,7 +25,6 @@ body {
     color: white;
     font-size:22px;
     font-weight: 500;
-    opacity: 1;
     text-align: center;
 }
 

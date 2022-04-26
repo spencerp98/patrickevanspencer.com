@@ -14,10 +14,6 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//set up database connection
-const mysql = require("./dbcon.js");
-app.set("mysql", mysql);
-
 //set up template engine
 const handlebars = require("express-handlebars").create({defaultLayout:"main"});
 app.engine("handlebars", handlebars.engine);
@@ -34,8 +30,6 @@ app.get("/", function(req, res){
 app.get("/projects", function(req, res){
     res.render('projects');
 });
-
-app.use('/db-project', require('./db-project/db-project.js'));
 
 app.get("/aboutme", function(req, res){
     res.render('aboutMe');
